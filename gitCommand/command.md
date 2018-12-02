@@ -13,8 +13,8 @@
 * 编辑git 配置文件  
   git config -e [--global]  
 * 设置git 账户和密码  
-  git config --global user.name "[name]"  
-  git config --gloabal user.email "[email]"  
+  **git config --global user.name "[name]"** 
+  **git config --gloabal user.email "[email]"**  
 * 查看git 账户和密码  
   git config user.name  
   git config user.email
@@ -24,14 +24,14 @@
 * 添加指定文件到暂存区  
   git add [file]  
 * 添加当前目录的所有文件到暂存区  
-  ** git add .  **
+  **git add .**
 * 删除工作区文件，并将文件放入暂存区  
   git rm [file]  
 
 # 四.代码提交  
 
 * 提交暂存区到仓库区  
-  ** git commit -m [message] ** 
+  **git commit -m [message]** 
 * 提交暂存区的指定文件到仓库区  
   git commit [file1]  -m [message] 
 * 提交时显示所有diff信息  
@@ -41,15 +41,15 @@
 * 显示所有本地分支  
   git branch
 * 显示所有本地分支和远程分支  
-  ** git branch -a **
+  **git branch -a**
 * 新建一个分支，并切换到那个分支上  
-  ** git checkout -b [branch] ** 
+  **git checkout -b [branch]** 
 * 切换到指定分支  
   git checkout [branch-name]
 * 把其他分支的内容合并到当前分支  
-  ** git merge [branch] **
+  **git merge [branch]**
 * 清空当前分支的内容
-  ** git checkout -- . **
+  **git checkout -- .**
 
 **   
 
@@ -65,7 +65,8 @@
 	git checkout master  
 	再删除beta上的内容  
 	git branch -d beta  
-	之后再回到beta上进行push 
+	之后再回到beta上进行
+	git push origin beta 
 
  
 **
