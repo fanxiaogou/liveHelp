@@ -13,7 +13,7 @@
 * 编辑git 配置文件  
   git config -e [--global]  
 * 设置git 账户和密码  
-  **git config --global user.name "[name]"** 
+  **git config --global user.name "[name]"**   
   **git config --gloabal user.email "[email]"**  
 * 查看git 账户和密码  
   git config user.name  
@@ -48,7 +48,7 @@
   git checkout [branch-name]
 * 把其他分支的内容合并到当前分支  
   **git merge [branch]**
-* 清空当前分支的内容
+* 清空当前分支的内容  
   **git checkout -- .**
 
 **   
