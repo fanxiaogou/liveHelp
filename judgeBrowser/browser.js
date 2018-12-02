@@ -1,3 +1,13 @@
+//区分各种浏览器，将代码传到cdn上，然后取cdn的链接，实现一套代码多用
+
+//将js引入在vue 里面的index.html中，互不干扰
+(function(){
+    var hm = document.createElement("script");
+    hm.src = "http://cdn.ourwill.cn/compatible/browser.js";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+})()
+
 (function () {
     var hm = document.createElement("link");
     hm.rel = 'stylesheet'
