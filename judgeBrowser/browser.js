@@ -3,7 +3,7 @@
 //将js引入在vue 里面的index.html中，互不干扰
 (function(){
     var hm = document.createElement("script");
-    hm.src = "http://cdn.ourwill.cn/compatible/browser.js";
+    hm.src = "http://cdn.fanxiaogou.cn/compatible/browser.js";
     var s = document.getElementsByTagName("script")[0]; 
     s.parentNode.insertBefore(hm, s);
 })()
@@ -11,7 +11,7 @@
 (function () {
     var hm = document.createElement("link");
     hm.rel = 'stylesheet'
-    hm.href = "http://cdn.ourwill.cn/compatible/browser.css";
+    hm.href = "http://cdn.fanxiaogou.cn/compatible/browser.css";
     document.head.appendChild(hm);
     hm.onload = function(){
         init();
@@ -22,11 +22,11 @@
         browser.setAttribute('id', 'browser');
 
         var html="";
-        html += "<img class='icon1' src='http://cdn.ourwill.cn/compatible/img/js.png'>";
+        html += "<img class='icon1' src='http://cdn.fanxiaogou.cn/compatible/img/js.png'>";
         html += "<div class='texts'>为了您更好的使用体验，建议使用";
         html += "      <a href='http://www.google.cn/chrome/' target='_Blank'>谷歌浏览器</a>";
         html += "</div>";
-        html += "<img id='close' class='icon2' src='http://cdn.ourwill.cn/compatible/img/close.png' />"
+        html += "<img id='close' class='icon2' src='http://cdn.fanxiaogou.cn/compatible/img/close.png' />"
 
         browser.innerHTML = html;
 
@@ -43,10 +43,8 @@
         var isFF = userAgent.indexOf("Firefox") > -1; //判断是否Firefox浏览器 
         var isChrome = userAgent.indexOf("Chrome") > -1;//判断Chrome浏览器 
         var is360 = _mime("type", "application/vnd.chromium.remoting-viewer");//检测360极速浏览器
-        
-        //safari 浏览器的判断（因电脑不方便，所以暂时未测）
         var isSafari = browserName.indexOf("safari") != -1; //判断是否是safari
-        var isSafari1 = /webkit/i.test(browserName) &&!(/chrome/i.test(browserName) && /webkit/i.test(browserName) && /mozilla/i.test(browserName));
+        var isSafari1 = /webkit/i.test(browserName) &&!(/chrome/i.test(browserName) && /webkit/i.test(browserName) && /mozilla/i.test(browserName));//判断是否是safari
 
 
         if(isEdge || qq || sougou || isOpera || isFF  ||isIE ||isIE11|| is360  ){
